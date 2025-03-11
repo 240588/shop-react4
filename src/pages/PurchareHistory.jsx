@@ -10,7 +10,7 @@ const PurchareHistory = () =>{
                 const response = await fetch('http://localhost:3001/orders')
                 if(!response.ok) {
                     trow new Error('Ошибка призагрузке истории заказов')
-                } finally{
+                     } finally{
                     setLoading(false)
                 }
             }
